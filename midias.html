@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <style>
-       body {
+    body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
         margin: 0;
@@ -17,6 +17,7 @@
         color: white;
         padding: 10px 0;
         text-align: center;
+        position: relative; /* Adicionado para posicionar o link */
     }
     header img {
         height: 80px;
@@ -24,18 +25,27 @@
     header h1 {
         margin: 0;
     }
+    .back-link {
+        position: absolute;
+        right: 20px; /* Ajuste a posição conforme necessário */
+        top: 20px; /* Ajuste a posição conforme necessário */
+        color: white;
+        text-decoration: none;
+    }
     main {
         margin: 20px;
     }
     h3 {
         color: #333;
     }
+    
 </style>
 </head>
 <body>
 <header>
     <a href="index.html"><img src="logo (2).png" alt="Inserir a descrição da imagem"></a>
     <h1>Musicas para treino</h1>
+    <a href="javascript:history.back()" class="back-link">Voltar</a>
 </header>
 <main>
     <section>
@@ -54,7 +64,7 @@
     <section>
         <h1>Video de kata-Sunparinpei</h1>
       
-        <video controls>
+        <video controls width="560" height="315">
             <source src="video2.mp4.mp4" type="video/mp4">
         </video>
     </section>
