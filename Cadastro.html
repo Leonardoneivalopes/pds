@@ -60,6 +60,12 @@
             top: 10px;
             right: 10px;
         }
+
+        .check{
+            width: auto;
+        }
+
+
 </style>
 </head>
 <body>
@@ -75,8 +81,15 @@
         <input type="text" id="nome" name="nome" required>
         <h3><label for="email">E-mail:</label></h3>
         <input type="email" id="email" name="email" required>
-        <h3><label for="senha">Senha:</label></h3>
-        <input type="password" id="senha" name="senha" required>
+        <h3><label for="senha">Assunto:</label></h3>
+        <input type="text" id="Assunto" name="Assunto" required>
+        <h3><label for="text">Mensagem</label></h3>
+        <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+   <div>
+        <input class="check" type="checkbox" name="copy" value="yes">
+        <label for="copy"> Desejo receber uma cópia no meu email</label>
+    </div>
+    
         <input type="submit" value="Cadastrar">
     </form>
 </div>
